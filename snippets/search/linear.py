@@ -6,14 +6,14 @@ string_dataset = ["b", "l", "o", "k", "f", "r", "j"]
 float_dataset = [9.99, 2.6, 7.02, 5.92, 0.01, 4.0, -1.2]
 
 # algorithm
-def linear_search(dataset: list, key: str) -> int:
+def linear_search(dataset: list, key: str) -> int | None:
     # go through every item and find key
     for index, variable in enumerate(dataset):
         if str(variable) == key:
             return index
         
-    # none found, will return negative pi
-    return -314159
+    # none found
+    return None
 
 # launch with data sets
 if __name__ == "__main__":
